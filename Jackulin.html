@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackulin Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap">
+    <style>
+        body {
+            background-color: #f1f3e9; 
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #012c3d;
+            padding: 25px 0 10px 0;
+            text-align: center;
+        }
+        header img {
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+        }
+        header h1 {
+            display: inline-block;
+            margin: 0;
+            color: #F7F8F3;
+            font-size: 55px;
+            vertical-align: middle;
+        }
+        nav {
+            text-align: center;
+            background-color: #012c3d;
+            padding: 18px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #78bdc4;
+            font-weight: bold;
+            margin: 0 20px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #F7444E;
+        }
+        .portfolio-heading {
+            text-align: center;
+            margin: -6px 0 -10px 0;
+            color: #F7444E;
+            padding-top: 25px;
+        }
+        .portfolio-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .project-card {
+            background-color: #ffffff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.2s;
+            min-width: 300px;
+            width: 40%;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        .project-info {
+            padding: 20px;
+        }
+        .project-title {
+            color: #F7444E;
+            font-size: 24px;
+            margin: 0;
+        }
+        .project-description {
+            color: #777;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        .project-image {
+            width: 100%;
+            height: auto;
+        }
+        .aboutresume {
+            background-color: #ffffff;
+            padding: 0 50px 50px 50px;
+        }
+        .about-description {
+            color: #7BBC4;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+        }
+        .contact-description {
+            color: #012c3d;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+        }
+        .backgroundset {
+            background-image: url('backgr567.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            color: #fff;
+            padding: 20px;
+        }
+        #centers {
+            text-align: center;
+        }
+        .contact-info{
+            display: inline-flex;
+            margin: 0;
+        }
+        .contact-info p{margin: 0;}
+    </style>
+    <script>
+        function clickrun(){
+            alert("Thanks for contacting Me");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>B. Jackulin</h1>
+    </header>
+    
+    <nav>
+        <a href="#">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="backgroundset">
+        <h2 id="projects" class="portfolio-heading">Projects</h2>
+        <div class="portfolio-container project-section">
+            <div class="project-card">
+                <img class="project-image" src="elevenone.jpg" alt="E-Commerce Website">
+                <div class="project-info">
+                    <h2 class="project-title">Culinary Website</h2>
+                    <p class="project-description">Developed a feature-rich culinary website using HTML, CSS, and JavaScript. Implemented user authentication, product search, and a shopping cart system.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="eleventwo.jpg" alt="Portfolio Website">
+                <div class="project-info">
+                    <h2 class="project-title">Plantation Website</h2>
+                    <p class="project-description">Designed and built a personal portfolio website to showcase my front-end development skills. Utilized HTML and CSS to create an interactive and responsive layout.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="aboutresume">
+        <h2 id="about" class="portfolio-heading" style="padding-top: 30px;"> About Me</h2>
+        <p class="about-description" id="centers">I am a passionate front-end developer with a strong background in web development. I enjoy creating beautiful and interactive web experiences that engage users and leave a lasting impression.</p>
+        <h2 id="resume" class="portfolio-heading"> Resume</h2>
+        <div class="resumee">
+            <h4>B. Jackulin</h4>
+            <div class="contact-info">
+                <p>Phone: 8756123876</p> <p style="margin-left: 30px;">Email: jackulin@gmail.com</p>
+            </div>
+            <h4>Summary :</h4>
+            <p class="summary">Experienced front-end developer with a background in UI/UX design, specializing in creating visually stunning and user-friendly websites. Proficient in HTML, CSS, and JavaScript, I excel in crafting responsive and mobile-friendly web solutions for various devices, including desktops, tablets, and mobiles. Let's collaborate to bring your web projects to life and ensure they work seamlessly across all platforms.</p>
+            <b>Education : </b> BCA</p></p>
+            <p class="skills" style="padding-bottom: 30px;"><b>Skills : </b>HTML/CSS, JavaScript, Responsive Web Design, Front-End Frameworks, Version Control/Git </p>
+        </div>
+    </div>
+    <section class="backgroundset" style="margin-top: -25px;">
+        <h2 id="contact" class="portfolio-heading"> Contact Me</h2>
+        <p class="contact-description contact-section" id="centers">If you have any questions or would like to discuss potential collaborations, please don't hesitate to get in touch. <br> You can reach me at <a href="" onclick="clickrun()" style="color: #012c3d"><b>jackulin@gmail.com</b></a></p>
+    </section>
+</body>
+</html>
